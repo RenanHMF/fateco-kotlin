@@ -27,10 +27,6 @@ class MainActivity : AppCompatActivity() {
             val letra3 : EditText = findViewById(R.id.letra3)
             val letra4 : EditText = findViewById(R.id.letra4)
 
-            /*var palavraTentada = letra0.text.toString() + letra1.text.toString() +
-                                 letra2.text.toString() + letra3.text.toString() +
-                                 letra4.text.toString()*/
-
             val listaPalavraTentada = mutableListOf<EditText>()
 
             listaPalavraTentada.add(letra0)
@@ -39,14 +35,10 @@ class MainActivity : AppCompatActivity() {
             listaPalavraTentada.add(letra3)
             listaPalavraTentada.add(letra4)
 
-            //var listaPalavraTentada = palavraTentada.toList()
-
             val listaPalavraSecreta = mutableListOf<String>()
-            listaPalavraSecreta.add(palavraSecreta[0].toString())
-            listaPalavraSecreta.add(palavraSecreta[1].toString())
-            listaPalavraSecreta.add(palavraSecreta[2].toString())
-            listaPalavraSecreta.add(palavraSecreta[3].toString())
-            listaPalavraSecreta.add(palavraSecreta[4].toString())
+            for (i in 0 .. 4){
+                listaPalavraSecreta.add(palavraSecreta[i].toString())
+            }
 
             for (i in 0 .. 4){
                 if (listaPalavraTentada[i].text.toString() in listaPalavraSecreta && listaPalavraTentada[i].text.toString() == listaPalavraSecreta[i]){
