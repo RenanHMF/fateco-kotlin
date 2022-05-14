@@ -1,5 +1,7 @@
 package com.example.fateco
 
+import android.graphics.Color
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,18 +19,47 @@ class MainActivity : AppCompatActivity() {
         val btnVerificarResposta : Button = findViewById(R.id.btnVerificarResposta)
 
         btnVerificarResposta.setOnClickListener {
-            val letra0palavra1 : EditText = findViewById(R.id.letra0palavra1)
-            val letra1palavra1 : EditText = findViewById(R.id.letra1palavra1)
-            val letra2palavra1 : EditText = findViewById(R.id.letra2palavra1)
-            val letra3palavra1 : EditText = findViewById(R.id.letra3palavra1)
-            val letra4palavra1 : EditText = findViewById(R.id.letra4palavra1)
+            val palavraSecreta = "FATEC"
 
-            var palavraTentada = letra0palavra1.text.toString() + letra1palavra1.text.toString() +
-                    letra2palavra1.text.toString() + letra3palavra1.text.toString() +
-                    letra4palavra1.text.toString()
+            val letra0 : EditText = findViewById(R.id.letra0)
+            val letra1 : EditText = findViewById(R.id.letra1)
+            val letra2 : EditText = findViewById(R.id.letra2)
+            val letra3 : EditText = findViewById(R.id.letra3)
+            val letra4 : EditText = findViewById(R.id.letra4)
 
-            val toast = Toast.makeText(this, "${palavraTentada}", Toast.LENGTH_LONG)
-            toast.show()
+            /*var palavraTentada = letra0.text.toString() + letra1.text.toString() +
+                                 letra2.text.toString() + letra3.text.toString() +
+                                 letra4.text.toString()*/
+
+            val listaPalavraTentada = mutableListOf<EditText>()
+
+            listaPalavraTentada.add(letra0)
+            listaPalavraTentada.add(letra1)
+            listaPalavraTentada.add(letra2)
+            listaPalavraTentada.add(letra3)
+            listaPalavraTentada.add(letra4)
+
+            //var listaPalavraTentada = palavraTentada.toList()
+
+            val listaPalavraSecreta = mutableListOf<String>()
+            listaPalavraSecreta.add(palavraSecreta[0].toString())
+            listaPalavraSecreta.add(palavraSecreta[1].toString())
+            listaPalavraSecreta.add(palavraSecreta[2].toString())
+            listaPalavraSecreta.add(palavraSecreta[3].toString())
+            listaPalavraSecreta.add(palavraSecreta[4].toString())
+
+            for (i in 0 .. 4){
+                if (listaPalavraTentada[i].text.toString() in listaPalavraSecreta && listaPalavraTentada[i].text.toString() == listaPalavraSecreta[i]){
+                    listaPalavraTentada[i].setBackgroundColor(Color.GREEN)
+                    listaPalavraTentada[i].setTextColor(Color.BLACK)
+                } else if(listaPalavraTentada[i].text.toString() in listaPalavraSecreta){
+                    listaPalavraTentada[i].setBackgroundColor(Color.YELLOW)
+                    listaPalavraTentada[i].setTextColor(Color.BLACK)
+                } else {
+                    listaPalavraTentada[i].setBackgroundColor(Color.RED)
+                    listaPalavraTentada[i].setTextColor(Color.BLACK)
+                }
+            }
         }
     }
 }
