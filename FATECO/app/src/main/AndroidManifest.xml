@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FATECO">
         <activity
+            android:name=".letra"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
