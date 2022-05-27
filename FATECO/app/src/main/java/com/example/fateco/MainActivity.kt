@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         getSupportActionBar()?.hide()
 
+
         val txtFATECO : TextView = findViewById(R.id.txtFATECO)
         val btnVerificarResposta : Button = findViewById(R.id.btnVerificarResposta)
 
@@ -27,9 +28,6 @@ class MainActivity : AppCompatActivity() {
         val letra4 : EditText = findViewById(R.id.letra4)
 
         var listaPalavraTentada1 = mutableListOf(letra0, letra1, letra2, letra3, letra4)
-
-
-        /**/
 
         // Tentativa linha 2
         val letra5 : EditText = findViewById(R.id.letra5)
@@ -270,6 +268,7 @@ class MainActivity : AppCompatActivity() {
             if (tentativa == 7 && !validarVitoria((letrasCertas))){
                 Toast.makeText(this, "PERDEU MERMÃO, BIXO!", Toast.LENGTH_LONG).show()
                 btnVerificarResposta.isClickable = false
+                txtFATECO.text = "A palavra era ${palavraSecreta}."
             }
         }
 
