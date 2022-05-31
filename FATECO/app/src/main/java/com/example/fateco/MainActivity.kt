@@ -271,8 +271,6 @@ class MainActivity : AppCompatActivity() {
                 txtFATECO.text = "A palavra era ${palavraSecreta}."
             }
         }
-
-
     }
 
     fun validarVitoria (acertos : Int) : Boolean{
