@@ -155,15 +155,15 @@ class MainActivity : AppCompatActivity() {
             if (tentativa == 1) {
                 for (i in 0..4) {
                     if (listaPalavraTentada1[i].text.toString() in listaPalavraSecreta && listaPalavraTentada1[i].text.toString() == listaPalavraSecreta[i]) {
-                        listaPalavraTentada1[i].setBackgroundColor(Color.GREEN)
-                        listaPalavraTentada1[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada1[i].setBackgroundColor(Color.parseColor("#43A047"))
+                        listaPalavraTentada1[i].setTextColor(Color.parseColor("#FFFFFF"))
                         letrasCertas += 1
                     } else if (listaPalavraTentada1[i].text.toString() in listaPalavraSecreta) {
-                        listaPalavraTentada1[i].setBackgroundColor(Color.YELLOW)
-                        listaPalavraTentada1[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada1[i].setBackgroundColor(Color.parseColor("#FFB300"))
+                        listaPalavraTentada1[i].setTextColor(Color.parseColor("#FFFFFF"))
                     } else {
-                        listaPalavraTentada1[i].setBackgroundColor(Color.RED)
-                        listaPalavraTentada1[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada1[i].setBackgroundColor(Color.parseColor("#E53935"))
+                        listaPalavraTentada1[i].setTextColor(Color.parseColor("#FFFFFF"))
                     }
                     listaPalavraTentada1[i].setEnabled(false)
                     listaPalavraTentada2[i].setEnabled(true)
@@ -173,15 +173,15 @@ class MainActivity : AppCompatActivity() {
                 letrasCertas = 0
                 for (i in 0..4) {
                     if (listaPalavraTentada2[i].text.toString() in listaPalavraSecreta && listaPalavraTentada2[i].text.toString() == listaPalavraSecreta[i]) {
-                        listaPalavraTentada2[i].setBackgroundColor(Color.GREEN)
-                        listaPalavraTentada2[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada2[i].setBackgroundColor(Color.parseColor("#43A047"))
+                        listaPalavraTentada2[i].setTextColor(Color.parseColor("#FFFFFF"))
                         letrasCertas += 1
                     } else if (listaPalavraTentada2[i].text.toString() in listaPalavraSecreta) {
-                        listaPalavraTentada2[i].setBackgroundColor(Color.YELLOW)
-                        listaPalavraTentada2[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada2[i].setBackgroundColor(Color.parseColor("#FFB300"))
+                        listaPalavraTentada2[i].setTextColor(Color.parseColor("#FFFFFF"))
                     } else {
-                        listaPalavraTentada2[i].setBackgroundColor(Color.RED)
-                        listaPalavraTentada2[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada2[i].setBackgroundColor(Color.parseColor("#E53935"))
+                        listaPalavraTentada2[i].setTextColor(Color.parseColor("#FFFFFF"))
                     }
                     listaPalavraTentada2[i].setEnabled(false)
                     listaPalavraTentada3[i].setEnabled(true)
@@ -191,15 +191,15 @@ class MainActivity : AppCompatActivity() {
                 letrasCertas = 0
                 for (i in 0..4) {
                     if (listaPalavraTentada3[i].text.toString() in listaPalavraSecreta && listaPalavraTentada3[i].text.toString() == listaPalavraSecreta[i]) {
-                        listaPalavraTentada3[i].setBackgroundColor(Color.GREEN)
-                        listaPalavraTentada3[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada3[i].setBackgroundColor(Color.parseColor("#43A047"))
+                        listaPalavraTentada3[i].setTextColor(Color.parseColor("#FFFFFF"))
                         letrasCertas += 1
                     } else if (listaPalavraTentada3[i].text.toString() in listaPalavraSecreta) {
-                        listaPalavraTentada3[i].setBackgroundColor(Color.YELLOW)
-                        listaPalavraTentada3[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada3[i].setBackgroundColor(Color.parseColor("#FFB300"))
+                        listaPalavraTentada3[i].setTextColor(Color.parseColor("#FFFFFF"))
                     } else {
-                        listaPalavraTentada3[i].setBackgroundColor(Color.RED)
-                        listaPalavraTentada3[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada3[i].setBackgroundColor(Color.parseColor("#E53935"))
+                        listaPalavraTentada3[i].setTextColor(Color.parseColor("#FFFFFF"))
                     }
                     listaPalavraTentada3[i].setEnabled(false)
                     listaPalavraTentada4[i].setEnabled(true)
@@ -209,15 +209,15 @@ class MainActivity : AppCompatActivity() {
                 letrasCertas = 0
                 for (i in 0..4) {
                     if (listaPalavraTentada4[i].text.toString() in listaPalavraSecreta && listaPalavraTentada4[i].text.toString() == listaPalavraSecreta[i]) {
-                        listaPalavraTentada4[i].setBackgroundColor(Color.GREEN)
-                        listaPalavraTentada4[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada4[i].setBackgroundColor(Color.parseColor("#43A047"))
+                        listaPalavraTentada4[i].setTextColor(Color.parseColor("#FFFFFF"))
                         letrasCertas += 1
                     } else if (listaPalavraTentada4[i].text.toString() in listaPalavraSecreta) {
-                        listaPalavraTentada4[i].setBackgroundColor(Color.YELLOW)
-                        listaPalavraTentada4[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada4[i].setBackgroundColor(Color.parseColor("#FFB300"))
+                        listaPalavraTentada4[i].setTextColor(Color.parseColor("#FFFFFF"))
                     } else {
-                        listaPalavraTentada4[i].setBackgroundColor(Color.RED)
-                        listaPalavraTentada4[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada4[i].setBackgroundColor(Color.parseColor("#E53935"))
+                        listaPalavraTentada4[i].setTextColor(Color.parseColor("#FFFFFF"))
                     }
                     listaPalavraTentada4[i].setEnabled(false)
                     listaPalavraTentada5[i].setEnabled(true)
@@ -227,15 +227,15 @@ class MainActivity : AppCompatActivity() {
                 letrasCertas = 0
                 for (i in 0..4) {
                     if (listaPalavraTentada5[i].text.toString() in listaPalavraSecreta && listaPalavraTentada5[i].text.toString() == listaPalavraSecreta[i]) {
-                        listaPalavraTentada5[i].setBackgroundColor(Color.GREEN)
-                        listaPalavraTentada5[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada5[i].setBackgroundColor(Color.parseColor("#43A047"))
+                        listaPalavraTentada5[i].setTextColor(Color.parseColor("#FFFFFF"))
                         letrasCertas += 1
                     } else if (listaPalavraTentada5[i].text.toString() in listaPalavraSecreta) {
-                        listaPalavraTentada5[i].setBackgroundColor(Color.YELLOW)
-                        listaPalavraTentada5[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada5[i].setBackgroundColor(Color.parseColor("#FFB300"))
+                        listaPalavraTentada5[i].setTextColor(Color.parseColor("#FFFFFF"))
                     } else {
-                        listaPalavraTentada5[i].setBackgroundColor(Color.RED)
-                        listaPalavraTentada5[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada5[i].setBackgroundColor(Color.parseColor("#E53935"))
+                        listaPalavraTentada5[i].setTextColor(Color.parseColor("#FFFFFF"))
                     }
                     listaPalavraTentada5[i].setEnabled(false)
                     listaPalavraTentada6[i].setEnabled(true)
@@ -245,15 +245,15 @@ class MainActivity : AppCompatActivity() {
                 letrasCertas = 0
                 for (i in 0..4) {
                     if (listaPalavraTentada6[i].text.toString() in listaPalavraSecreta && listaPalavraTentada6[i].text.toString() == listaPalavraSecreta[i]) {
-                        listaPalavraTentada6[i].setBackgroundColor(Color.GREEN)
-                        listaPalavraTentada6[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada6[i].setBackgroundColor(Color.parseColor("#43A047"))
+                        listaPalavraTentada6[i].setTextColor(Color.parseColor("#FFFFFF"))
                         letrasCertas += 1
                     } else if (listaPalavraTentada6[i].text.toString() in listaPalavraSecreta) {
-                        listaPalavraTentada6[i].setBackgroundColor(Color.YELLOW)
-                        listaPalavraTentada6[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada6[i].setBackgroundColor(Color.parseColor("#FFB300"))
+                        listaPalavraTentada6[i].setTextColor(Color.parseColor("#FFFFFF"))
                     } else {
-                        listaPalavraTentada6[i].setBackgroundColor(Color.RED)
-                        listaPalavraTentada6[i].setTextColor(Color.BLACK)
+                        listaPalavraTentada6[i].setBackgroundColor(Color.parseColor("#E53935"))
+                        listaPalavraTentada6[i].setTextColor(Color.parseColor("#FFFFFF"))
                     }
                     listaPalavraTentada6[i].setEnabled(false)
                 }

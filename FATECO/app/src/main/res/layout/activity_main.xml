@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0091EA"
+    android:background="#EDEDED "
     tools:context=".MainActivity"
     tools:layout_editor_absoluteX="-20dp"
     tools:layout_editor_absoluteY="0dp">
@@ -529,21 +529,24 @@
         android:id="@+id/txtFATECO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
         android:text="FATECO"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#B51111 "
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnVerificarResposta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
-        android:backgroundTint="#00C853"
+        android:layout_width="317dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#43A047"
         android:text="VERIFICAR  RESPOSTA"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -557,8 +560,8 @@
         android:id="@+id/btnVoltar"
         android:layout_width="145dp"
         android:layout_height="63dp"
-        android:layout_marginStart="64dp"
-        android:backgroundTint="#FFD600"
+        android:layout_marginStart="44dp"
+        android:backgroundTint="#FFB300"
         android:text="VOLTAR"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -567,13 +570,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnVerificarResposta"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnJogarNovamente"
         android:layout_width="145dp"
         android:layout_height="63dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="44dp"
         android:backgroundTint="#DD2C00"
         android:text="JOGAR NOVAMENTE"
         android:textAlignment="center"
@@ -583,6 +586,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnVerificarResposta"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
