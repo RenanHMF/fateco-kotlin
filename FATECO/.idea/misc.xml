@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Fatec/AndroidStudioProjects/FATECO/app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="..\:/Users/Fatec/AndroidStudioProjects/fateco-kotlin/FATECO/app/src/main/res/layout/activity_main.xml" value="0.278125" />
-        <entry key="..\:/Users/Fatec/Downloads/fateco-kotlin/FATECO/app/src/main/res/layout/activity_letra.xml" value="0.278125" />
-        <entry key="..\:/Users/Fatec/Downloads/fateco-kotlin/FATECO/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Fatec/Downloads/fateco-kotlin/FATECO/app/src/main/res/layout/activity_main2.xml" value="0.278125" />
-        <entry key="..\:/Users/Fatec/fateco-kotlin/FATECO/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/Fatec/AndroidStudioProjects/Fateco/app/src/main/res/layout/activity_details.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Fatec/AndroidStudioProjects/Fateco/app/src/main/res/layout/activity_how_play.xml" value="0.2" />
+        <entry key="..\:/Users/Fatec/AndroidStudioProjects/Fateco/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Fatec/AndroidStudioProjects/Fateco/app/src/main/res/layout/activity_stats.xml" value="0.25" />
+        <entry key="..\:/Users/Fatec/AndroidStudioProjects/FunFatec/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Kauan/AndroidStudioProjects/Fateco/app/src/main/res/layout/activity_fateco.xml" value="0.33" />
+        <entry key="..\:/Users/Kauan/AndroidStudioProjects/Fateco/app/src/main/res/layout/activity_how_play.xml" value="0.33" />
+        <entry key="..\:/Users/Kauan/AndroidStudioProjects/Fateco/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Kauan/AndroidStudioProjects/Fateco/app/src/main/res/layout/activity_stats.xml" value="0.22" />
       </map>
     </option>
   </component>
