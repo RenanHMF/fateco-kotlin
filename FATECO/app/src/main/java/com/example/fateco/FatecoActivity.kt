@@ -4,10 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.Toast
+import android.widget.*
 
 class FatecoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +22,7 @@ class FatecoActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //val txtFATECO : TextView = findViewById(R.id.txtFATECO)
+        val txtFATECO : TextView = findViewById(R.id.txtFATECO)
         val btnVerificarResposta : Button = findViewById(R.id.btnVerificarResposta)
 
         // Tentativa linha 1
@@ -270,7 +267,7 @@ class FatecoActivity : AppCompatActivity() {
             if (tentativa == 7 && !validarVitoria((letrasCertas))){
                 Toast.makeText(this, "PERDEU MERMÃO, BIXO!", Toast.LENGTH_LONG).show()
                 btnVerificarResposta.isClickable = false
-                //.text = "A palavra era ${palavraSecreta}."
+                txtFATECO.text = "A palavra era ${palavraSecreta}."
             }
         }
     }
