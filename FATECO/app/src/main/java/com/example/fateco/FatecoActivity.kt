@@ -267,6 +267,7 @@ class FatecoActivity : AppCompatActivity() {
             if (tentativa == 7 && !validarVitoria((letrasCertas))){
                 Toast.makeText(this, "PERDEU MERMÃO, BIXO!", Toast.LENGTH_LONG).show()
                 btnVerificarResposta.isClickable = false
+                txtFATECO.textSize = 33f
                 txtFATECO.text = "A palavra era ${palavraSecreta}."
             }
         }
