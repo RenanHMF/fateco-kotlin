@@ -39,15 +39,17 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         android:id="@+id/letra15"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -56,32 +58,35 @@
 
     <EditText
         android:id="@+id/letra24"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/letra23"
-        app:layout_constraintTop_toBottomOf="@+id/letra19" />
+        app:layout_constraintTop_toBottomOf="@+id/letra19"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra23"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -90,30 +95,33 @@
 
     <EditText
         android:id="@+id/letra18"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra17"
-        app:layout_constraintTop_toBottomOf="@+id/letra13" />
+        app:layout_constraintTop_toBottomOf="@+id/letra13"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra19"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -125,13 +133,14 @@
     <EditText
         android:id="@+id/letra28"
         android:layout_width="55dp"
-        android:textAllCaps="true"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -140,46 +149,51 @@
 
     <EditText
         android:id="@+id/letra27"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra26"
-        app:layout_constraintTop_toBottomOf="@+id/letra22" />
+        app:layout_constraintTop_toBottomOf="@+id/letra22"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra22"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra21"
-        app:layout_constraintTop_toBottomOf="@+id/letra17" />
+        app:layout_constraintTop_toBottomOf="@+id/letra17"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra17"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -188,51 +202,57 @@
 
     <EditText
         android:id="@+id/letra16"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra15"
-        app:layout_constraintTop_toBottomOf="@+id/letra11" />
+        app:layout_constraintTop_toBottomOf="@+id/letra11"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra21"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra20"
-        app:layout_constraintTop_toBottomOf="@+id/letra16" />
+        app:layout_constraintTop_toBottomOf="@+id/letra16"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra26"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra25"
-        app:layout_constraintTop_toBottomOf="@+id/letra21" />
+        app:layout_constraintTop_toBottomOf="@+id/letra21"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra25"
@@ -242,24 +262,27 @@
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/letra20" />
+        app:layout_constraintTop_toBottomOf="@+id/letra20"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra20"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -268,14 +291,15 @@
 
     <EditText
         android:id="@+id/letra29"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -286,46 +310,51 @@
 
     <EditText
         android:id="@+id/letra10"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/letra5" />
+        app:layout_constraintTop_toBottomOf="@+id/letra5"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra12"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra11"
-        app:layout_constraintTop_toBottomOf="@+id/letra7" />
+        app:layout_constraintTop_toBottomOf="@+id/letra7"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra13"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -334,14 +363,15 @@
 
     <EditText
         android:id="@+id/letra14"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -352,39 +382,42 @@
 
     <EditText
         android:id="@+id/letra11"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra10"
-        app:layout_constraintTop_toBottomOf="@+id/letra6" />
+        app:layout_constraintTop_toBottomOf="@+id/letra6"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra5"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/letra0" />
+        app:layout_constraintTop_toBottomOf="@+id/letra0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra9"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
@@ -392,57 +425,65 @@
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/letra8"
-        app:layout_constraintTop_toBottomOf="@+id/letra4" />
+        app:layout_constraintTop_toBottomOf="@+id/letra4"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra8"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra7"
-        app:layout_constraintTop_toBottomOf="@+id/letra3" />
+        app:layout_constraintTop_toBottomOf="@+id/letra3"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra7"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra6"
-        app:layout_constraintTop_toBottomOf="@+id/letra2" />
+        app:layout_constraintTop_toBottomOf="@+id/letra2"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra6"
-        android:textAllCaps="true"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
@@ -458,6 +499,7 @@
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#0D0D0D"
@@ -466,7 +508,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toEndOf="@+id/letra3"
-        app:layout_constraintTop_toBottomOf="@+id/txtFATECO" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFATECO"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra3"
@@ -476,6 +519,7 @@
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#0D0D0D"
@@ -492,13 +536,15 @@
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra1"
-        app:layout_constraintTop_toBottomOf="@+id/txtFATECO" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFATECO"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/letra1"
@@ -508,13 +554,15 @@
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/letra0"
-        app:layout_constraintTop_toBottomOf="@+id/txtFATECO" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFATECO"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/txtFATECO"
@@ -538,13 +586,15 @@
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textCapSentences"
+        android:maxLength="1"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#0D0D0D"
         android:textColorHint="#0D0D0D"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFATECO" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFATECO"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button"
