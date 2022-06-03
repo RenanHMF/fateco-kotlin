@@ -5,11 +5,18 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import androidx.room.Room
+import com.example.fateco.AppDatabase
+import com.example.fateco.Stats
 
 class FatecoActivity : AppCompatActivity() {
+    lateinit var db: AppDatabase;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fateco)
+
+        db = Room.databaseBuilder(applicationContext, AppDatabase::class.java,"banco.db").allowMainThreadQueries().build()
 
         //Esconder barra
         getSupportActionBar()?.hide();
@@ -260,15 +267,50 @@ class FatecoActivity : AppCompatActivity() {
             tentativa += 1
 
             if (validarVitoria(letrasCertas)) {
-                Toast.makeText(this, "GANHOU, BIXO!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "EXCELSIOR!", Toast.LENGTH_LONG).show()
                 btnVerificarResposta.isClickable = false
+
+                val actualStats = db.dao().getStatsById()
+                if (actualStats.isNullOrEmpty()){
+                    db.dao().insertStats(Stats(1, 1, 1, 1, 1))
+                }else {
+                    var carrerHigh = actualStats[0].carrerHigh.toString().toInt()
+                    var gamesPlayed = actualStats[0].gamesPlayed.toString().toInt()
+                    var gamesWon = actualStats[0].gamesWon.toString().toInt()
+                    var streak = actualStats[0].streak.toString().toInt()
+
+                    gamesPlayed+= 1
+                    gamesWon += 1
+                    streak += 1
+
+                    if (streak > carrerHigh){
+                        carrerHigh = streak
+                    }
+
+                    db.dao().setStats(Stats(1, carrerHigh, gamesPlayed, gamesWon, streak))
+                }
             }
 
             if (tentativa == 7 && !validarVitoria((letrasCertas))){
-                Toast.makeText(this, "PERDEU MERMÃO, BIXO!", Toast.LENGTH_LONG).show()
+                val actualStats = db.dao().getStatsById()
+                if (actualStats.isNullOrEmpty()){
+                    db.dao().insertStats(Stats(1, 0, 1, 0, 0))
+                }else {
+                    var carrerHigh = actualStats[0].carrerHigh.toString().toInt()
+                    var gamesPlayed = actualStats[0].gamesPlayed.toString().toInt()
+                    var gamesWon = actualStats[0].gamesWon.toString().toInt()
+                    var streak = actualStats[0].streak.toString().toInt()
+
+                    gamesPlayed += 1
+
+                    db.dao().setStats(Stats(1, carrerHigh, gamesPlayed, gamesWon, 0))
+                }
+
+                Toast.makeText(this, "NÃO FOI DESSA VEZ! TENTE NOVAMENTE!", Toast.LENGTH_LONG).show()
                 btnVerificarResposta.isClickable = false
                 txtFATECO.textSize = 33f
                 txtFATECO.text = "A palavra era ${palavraSecreta}."
+
             }
         }
     }
