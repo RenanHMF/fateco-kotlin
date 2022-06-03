@@ -9,6 +9,7 @@ import androidx.room.Room
 import com.example.fateco.AppDatabase
 import com.example.fateco.Stats
 
+
 class FatecoActivity : AppCompatActivity() {
     lateinit var db: AppDatabase;
 
@@ -22,7 +23,6 @@ class FatecoActivity : AppCompatActivity() {
         getSupportActionBar()?.hide();
 
         val buttonGoBack: ImageButton = findViewById(R.id.imgGoBackFatecoButton)
-
 
         buttonGoBack.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java);
@@ -146,7 +146,29 @@ class FatecoActivity : AppCompatActivity() {
         letra28.setEnabled(false)
         letra29.setEnabled(false)
 
-        val palavraSecreta = "FATEC"
+        val bagOfWords = listOf("ALGOZ", "EXITO", "SAGAZ", "AMAGO", "MEXER", "SENSO", "AFETO", "SUTIL", "INATO", "CERNE", "MUTUO", "AUDAZ", "POREM", "TERMO", "NOBRE", "AQUEM", "IMPIO", "FAZER", "SECAO", "VIGOR", "LAPSO", "NEGRO",
+            "IDEIA", "GENRO", "DESDE", "POSSE", "FUTIL", "ATROZ", "RAZAO", "TORPE", "EXPOR", "ANIMO", "HONRA", "DETEM", "ARDIL", "GLEBA", "ANSIA", "ETICA", "PODER", "AVIDO", "SANAR", "ATRAS", "PIFIO", "MUITO",
+            "DIZER", "GESTO", "DIGNO", "CORJA", "JUSTO", "TENAZ", "CEDER", "ANEXO", "FUGAZ", "VIVAZ", "PORRA", "OBICE", "COZER", "COSER", "REVES", "ASSIM", "HABIL", "MORAL", "DEVER", "EBRIO", "COMUM", "AFAGO",
+            "FLUIR", "VICIO", "CAUSA", "ONTEM", "CENSO", "REACA", "SERIO", "CITAR", "IMPOR", "SEARA", "ENFIM", "PROLE", "CISMA", "PUDOR", "NENEM", "BRADO", "ALIBI", "REGRA", "GERAR", "EGIDE", "OBTER", "LOUCO",
+            "CRISE", "PESAR", "TENUE", "SABER", "PROBO", "TENRO", "PLENO", "ENTAO", "VIRIL", "OBVIO", "QUICA", "APICE", "PARVO", "BRUMA", "FAVOR", "VISAR", "TEMOR", "SINTO", "SABIO", "DENSO", "TANGE", "DESSE",
+            "RETER", "JEITO", "HAVER", "SOBRE", "APRAZ", "SENIL", "SONHO", "SERIA", "LABOR", "FUSAO", "OBITO", "USURA", "CRIAR", "CULTO", "TEMER", "ROGAR", "MANSO", "AMENO", "EXODO", "ADIAR", "JUIZO", "PRESA",
+            "REVEL", "FORMA", "CLAVA", "BIRRA", "PEDIR", "PROSA", "VACUO", "MUNDO", "DOGMA", "ESTAR", "FATOR", "TEMPO", "SERVO", "ARDUO", "FALAR", "VARAO", "FARSA", "MUTUA", "ACASO", "PULHA", "FORTE", "FALTA",
+            "CUNHO", "AINDA", "EXATO", "GRATO", "ETNIA", "FLUXO", "AMPLO", "SAUDE", "ACHAR", "FEIXE", "GUISA", "ASSAZ", "MAGOA", "PARCO", "CACAR", "DOIDO", "PRUMO", "LAICO", "ATUAR", "FELIZ", "TOMAR", "RELES",
+            "RITMO", "HEROI", "LAVRA", "PRAXE", "HASTE", "NOCAO", "VITAL", "CRUEL", "DEBIL", "DETER", "LEVAR", "AMIGO", "CASAL", "GOZAR", "GRACA", "MATIZ", "VISAO", "ANUIR", "CRIVO", "FINJO", "ALGUM", "DEVIR",
+            "CHULO", "DUBIO", "BEATA", "ORDEM", "CERTO", "RIGOR", "SAIDA", "SESTA", "EPICO", "CASTA", "LEITO", "BRAVO", "CAPAZ", "VULTO", "LAMIA", "SALVO", "SULCO", "ACIMA", "RELVA", "VENIA", "MESMO", "DORSO",
+            "POSSA", "CISAO", "VALHA", "UNICO", "PESTE", "VALOR", "FUGIR", "VASTO", "COISA", "VALIA", "TECER", "GARBO", "BANAL", "PUXAR", "SENDO", "DOCIL", "REGER", "FUROR", "POBRE", "ARIDO", "IGUAL", "MAIOR",
+            "BREVE", "ATIVO", "OUVIR", "SENAO", "FALSO", "SELAR", "VELAR", "ANELO", "CASTO", "HORDA", "AUREO", "FITAR", "VIVER", "OLHAR", "BOCAL", "TOADA", "POMPA", "MORAR", "GERIR", "SUMIR", "COPIA", "VORAZ",
+            "FACIL", "CABAL", "LEIGO", "MORTE", "TEDIO", "NOITE", "REMIR", "MOCAO", "HOMEM", "COESO", "UNIAO", "SEGUE", "PRECE", "AVIAO", "VIMOS", "COCAR", "VENDO", "TERNO", "CESTA", "TENDE", "VENAL", "ACESO",
+            "PEIXE", "VAZIO", "CLARO", "SONSO", "PARDO", "MESMA", "FACAM", "MOTIM", "HIATO", "SERIE", "PAUTA", "PASSO", "BANDO", "VIRAO", "SENDA", "VELHO", "GRAVE", "OPCAO", "OTICA", "ANCIA", "REVER", "SARUE",
+            "IMUNE", "HOUVE", "ARCAR", "HAVIA", "CAUDA", "PECHA", "BOTAR", "FIXAR", "POSSO", "LIAME", "AVARO", "FLORA", "COVIL", "FORCA", "FENDA", "FARDO", "POUCO", "GENTE", "PONTO", "JOVEM", "JAZIA", "QUOTA",
+            "NODOA", "CAIXA", "SAIBA", "VETOR", "EXAME", "FOSSE", "FAUNA", "LUGAR", "FONTE", "CIOSO", "ADVEM", "PRAZO", "VEMOS", "VERBA", "ARDOR", "CIUME", "NICHO", "PRESO", "FEUDO", "OTIMO", "EPOCA", "JUNTO",
+            "OPACO", "APOIO", "SOLTO", "DOIDO", "SOLDO", "PEGAR", "TENDO", "ASTRO", "SERAO", "CALMA", "CHEIO", "GLOSA", "ORFAO", "FICAR", "APEGO", "APELO", "CANSO", "LASSO", "FEITO", "ESTAO", "FATAL", "FOLGA",
+            "OUTRO", "ASILO", "DERAM", "BATER", "CRIME", "SUPOR", "SIGNO", "FINDA", "PLANO", "FRACO", "TIRAR", "CARRO", "PAJEM", "SUCIA", "FICHA", "RESES", "IGNEO", "FOREM", "NAVIO", "BURRO", "AMBAS", "PARTE",
+            "RUINA", "MUDAR", "OCASO", "MASSA", "CREDO", "BRISA", "ATRIO", "AONDE", "NACAO", "LEGAL", "XEQUE", "CACHO", "COVER", "CAMPO", "NIVEL", "SETOR", "IDEAL", "REZAR", "PLATO", "PAIRA", "LESSE", "OPTAR",
+            "PRAGA", "GOLPE", "BICHO", "PLEBE", "TORSO", "INDIO", "TANTO", "PRAIA", "SINAL", "PASMO", "ABRIR", "FRUIR", "VENHO", "GENIO", "ICONE", "MESSE", "PERDA", "TROCA", "AGUDO", "FATEC", "AROMA", "RUBRO")
+
+        var randomNum = (0..439).random()
+        val palavraSecreta = bagOfWords[randomNum]
 
         val listaPalavraSecreta = mutableListOf<String>()
         for (i in 0 .. 4){
