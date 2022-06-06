@@ -31,6 +31,7 @@ class FatecoActivity : AppCompatActivity() {
 
         val txtFATECO : TextView = findViewById(R.id.txtFATECO)
         val btnVerificarResposta : Button = findViewById(R.id.btnVerificarResposta)
+        val btnJogarNovamente : Button = findViewById(R.id.btnJogarNovamente)
 
         // Tentativa linha 1
         val letra0 : EditText = findViewById(R.id.letra0)
@@ -334,6 +335,12 @@ class FatecoActivity : AppCompatActivity() {
                 txtFATECO.text = "A palavra era ${palavraSecreta}."
 
             }
+        }
+
+        btnJogarNovamente.setOnClickListener {
+            finish()
+            val intent = Intent(this, FatecoActivity::class.java);
+            startActivity(intent)
         }
     }
 
